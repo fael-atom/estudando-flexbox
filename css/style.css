@@ -85,8 +85,13 @@ button:hover {
 span {
   text-transform: uppercase;
   background-color: orange;
+}
+
+.header span {
   padding: 10px;
 }
+
+
 
 .container {
   display: flex;
@@ -170,7 +175,52 @@ span {
 }
 
 .propriedade .valor {
-  text-transform: uppercase;
   background-color: rgba(255, 71, 71, 0.877);
   padding: 10px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+  .container {
+    height: 100px
+  }
+  .header h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Rampart One", cursive;
+    color: rgb(17, 17, 17);
+    border: 1px solid black;
+    margin-bottom: 50px;
+  }
+
+  .header span {
+    padding: 5px;
+  }
+
+  .container .propriedade {
+    height: 100px;
+  }
+
+  .container .container-cubos {
+    gap: 5px;
+  }
+  .container-cubos div {
+    width: 15px;
+    height: 15px;
+  }
+
+  .propriedade .numero {
+    font-size: 0.6rem;
+    padding: 0 5px 0 5px;
+  }
+
+  .propriedade .conteudo h2 {
+    font-size: .5rem;
+  }
+
+  .propriedade .valor {
+    font-size: .5rem;
+    padding: 0;
+    margin-top: 100px;
+  }
 }
